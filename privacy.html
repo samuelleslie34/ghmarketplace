@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - GH Local Store</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🇬🇭 GH Local Store</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#products">Products</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="login.html">Login</a>
+      <span id="authLinks">
+        <!-- Filled by JS: Login / Logout -->
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+              </ol>
+            </nav>
+            <h1>Privacy Policy</h1>
+            <p class="lead">Your privacy is important to us. This policy explains how we collect, use, and protect your information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="content-card">
+              <h2>Information We Collect</h2>
+              <p>We collect information you provide directly to us, such as when you create an account, make a purchase, or contact us for support.</p>
+              <ul>
+                <li><strong>Account Information:</strong> Name, email address, password</li>
+                <li><strong>Purchase Information:</strong> Billing address, shipping address, payment details</li>
+                <li><strong>Communication:</strong> Messages, feedback, and support requests</li>
+                <li><strong>Usage Data:</strong> How you interact with our website and products</li>
+              </ul>
+
+              <h2>How We Use Your Information</h2>
+              <p>We use the information we collect to:</p>
+              <ul>
+                <li>Process and fulfill your orders</li>
+                <li>Provide customer support</li>
+                <li>Send you updates about your orders</li>
+                <li>Improve our website and services</li>
+                <li>Send marketing communications (with your consent)</li>
+              </ul>
+
+              <h2>Information Sharing</h2>
+              <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+              <ul>
+                <li>With payment processors to complete transactions</li>
+                <li>With shipping partners to deliver your orders</li>
+                <li>When required by law or to protect our rights</li>
+                <li>With your explicit consent</li>
+              </ul>
+
+              <h2>Data Security</h2>
+              <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+              <h2>Your Rights</h2>
+              <p>You have the right to:</p>
+              <ul>
+                <li>Access your personal information</li>
+                <li>Correct inaccurate information</li>
+                <li>Request deletion of your information</li>
+                <li>Opt-out of marketing communications</li>
+                <li>Withdraw consent at any time</li>
+              </ul>
+
+              <h2>Contact Us</h2>
+              <p>If you have questions about this privacy policy or our data practices, please contact us:</p>
+              <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:privacy@ghlocalstore.gh">privacy@ghlocalstore.gh</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+233XXXXXXXXX">+233 XX XXX XXXX</a></p>
+                <p><strong>Address:</strong> Accra, Ghana</p>
+              </div>
+
+              <div class="policy-update">
+                <p><strong>Last Updated:</strong> <span id="currentDate"></span></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <div class="sidebar-card">
+              <h4>Quick Links</h4>
+              <ul class="sidebar-links">
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="cookies.html">Cookie Policy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        <small>© <span id="year"></span> GH Local Store · Built for Diploma Project · Celebrating Ghanaian Culture</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Set current date
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  </script>
+</body>
+</html>
+

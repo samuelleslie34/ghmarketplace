@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login · GH Local Store</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">GH Local Store</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <span id="authLinks"></span>
+    </nav>
+  </header>
+
+  <main class="container-fluid p-0">
+    <!-- Hero Section -->
+    <section class="auth-hero">
+      <div class="auth-hero-overlay"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="auth-hero-content">
+              <h1 class="display-4 fw-bold text-white mb-4">
+                Welcome to Ghana's Finest
+              </h1>
+              <p class="lead text-white mb-4">
+                Discover authentic local products and connect with our vibrant community. 
+                Join thousands of customers who trust GH Local Store for quality goods.
+              </p>
+              <div class="auth-hero-features">
+                <div class="feature-item">
+                  <div class="feature-icon">🌟</div>
+                  <span>Authentic Local Products</span>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">🚚</div>
+                  <span>Fast Local Delivery</span>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">💎</div>
+                  <span>Premium Quality</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="auth-form-container">
+              <div class="auth-form-card">
+                <div class="auth-form-header text-center mb-4">
+                  <h2 class="h3 mb-2">Welcome Back</h2>
+                  <p class="text-muted">Sign in to your account or create a new one</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="auth-tabs mb-4">
+                  <button class="auth-tab-btn active" data-tab="loginTab">
+                    <span class="tab-icon">🔐</span>
+                    Sign In
+                  </button>
+                  <button class="auth-tab-btn" data-tab="signupTab">
+                    <span class="tab-icon">✨</span>
+                    Sign Up
+                  </button>
+                </div>
+
+                <!-- Login Tab -->
+                <div id="loginTab" class="auth-tab active">
+                  <form id="loginForm" class="auth-form">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required />
+                      <label for="loginEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Password" required />
+                      <label for="loginPassword">Password</label>
+                    </div>
+                    <div class="d-grid mb-3">
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        <span class="btn-icon">🚀</span>
+                        Sign In
+                      </button>
+                    </div>
+                  </form>
+                  
+                 
+                </div>
+
+                <!-- Signup Tab -->
+                <div id="signupTab" class="auth-tab">
+                  <form id="signupForm" class="auth-form">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required />
+                      <label for="signupEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="signupPassword" placeholder="Password" minlength="4" required />
+                      <label for="signupPassword">Password</label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="termsCheck" required />
+                      <label class="form-check-label" for="termsCheck">
+                        I agree to the <a href="terms.html" class="text-decoration-none">Terms of Service</a> and 
+                        <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                      </label>
+                    </div>
+                    <div class="d-grid mb-3">
+                      <button type="submit" class="btn btn-success btn-lg">
+                        <span class="btn-icon">🎉</span>
+                        Create Account
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="auth-form-footer text-center mt-4">
+                  <p class="text-muted small">
+                    By continuing, you agree to our terms and acknowledge our privacy policy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <small>© <span id="year"></span> GH Local Store - Ghana's Premier Local Marketplace</small>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small>
+            <a href="help.html" class="text-decoration-none me-3">Help</a>
+            <a href="contact.html" class="text-decoration-none me-3">Contact</a>
+            <a href="privacy.html" class="text-decoration-none">Privacy</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

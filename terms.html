@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service - GH Local Store</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🇬🇭 GH Local Store</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#products">Products</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="login.html">Login</a>
+      <span id="authLinks">
+        <!-- Filled by JS: Login / Logout -->
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Terms of Service</li>
+              </ol>
+            </nav>
+            <h1>Terms of Service</h1>
+            <p class="lead">Please read these terms carefully before using our services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="content-card">
+              <h2>Acceptance of Terms</h2>
+              <p>By accessing and using GH Local Store, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+              <h2>Use of Service</h2>
+              <p>Our service is provided for personal, non-commercial use. You agree not to:</p>
+              <ul>
+                <li>Use the service for any unlawful purpose</li>
+                <li>Attempt to gain unauthorized access to our systems</li>
+                <li>Interfere with the proper working of the service</li>
+                <li>Use automated systems to access the service</li>
+              </ul>
+
+              <h2>Account Registration</h2>
+              <p>To access certain features, you must create an account. You are responsible for:</p>
+              <ul>
+                <li>Maintaining the confidentiality of your account</li>
+                <li>All activities that occur under your account</li>
+                <li>Providing accurate and complete information</li>
+                <li>Notifying us immediately of any unauthorized use</li>
+              </ul>
+
+              <h2>Product Information</h2>
+              <p>We strive to provide accurate product information, but we do not warrant that product descriptions are accurate, complete, reliable, current, or error-free.</p>
+
+              <h2>Pricing and Payment</h2>
+              <p>All prices are in Ghanaian Cedi (GHS) unless otherwise stated. We reserve the right to modify prices at any time. Payment must be made in full at the time of purchase.</p>
+
+              <h2>Shipping and Delivery</h2>
+              <p>Shipping times are estimates only. We are not responsible for delays beyond our control. Risk of loss and title for items pass to you upon delivery.</p>
+
+              <h2>Returns and Refunds</h2>
+              <p>We accept returns within 30 days of delivery for items in original condition. Refunds will be processed within 14 business days.</p>
+
+              <h2>Intellectual Property</h2>
+              <p>All content on this website, including text, graphics, logos, and images, is the property of GH Local Store and is protected by copyright laws.</p>
+
+              <h2>Limitation of Liability</h2>
+              <p>GH Local Store shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the service.</p>
+
+              <h2>Governing Law</h2>
+              <p>These terms shall be governed by and construed in accordance with the laws of Ghana.</p>
+
+              <h2>Changes to Terms</h2>
+              <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting on the website.</p>
+
+              <h2>Contact Information</h2>
+              <p>For questions about these terms, please contact us:</p>
+              <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:legal@ghlocalstore.gh">legal@ghlocalstore.gh</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+233XXXXXXXXX">+233 XX XXX XXXX</a></p>
+                <p><strong>Address:</strong> Accra, Ghana</p>
+              </div>
+
+              <div class="policy-update">
+                <p><strong>Last Updated:</strong> <span id="currentDate"></span></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <div class="sidebar-card">
+              <h4>Quick Links</h4>
+              <ul class="sidebar-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookie Policy</a></li>
+                <li><a href="shipping.html">Shipping Info</a></li>
+                <li><a href="returns.html">Returns Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        <small>© <span id="year"></span> GH Local Store · Built for Diploma Project · Celebrating Ghanaian Culture</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Set current date
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  </script>
+</body>
+</html>
+
